@@ -13,6 +13,8 @@ public class DtoProyecto {
     private Date fechaFin;
     private DtoContexto contexto;
     private List<DtoUsuario> usuarios;
+    private List<DtoTarea> tareas;
+   
 
     public Long getId() {
         return id;
@@ -70,8 +72,17 @@ public class DtoProyecto {
         this.usuarios = usuarios;
     }
 
+    public List<DtoTarea> getTareas() {
+        return tareas;
+    }
+
+    public void setTareas(List<DtoTarea> tareas) {
+        this.tareas = tareas;
+    }
+
     public DtoProyecto() {
-        this.usuarios = new ArrayList<DtoUsuario>();
+        this.usuarios = new ArrayList<>();
+        this.tareas = new ArrayList<>();
     }
 
     public DtoProyecto(String nombre, DtoUsuario responsable, Date fechaInicio, Date fechaFin, DtoContexto contexto) {
@@ -81,5 +92,6 @@ public class DtoProyecto {
         this.fechaFin = fechaFin;
         this.contexto = contexto;
         this.usuarios = new ArrayList<>();
+        this.tareas = new ArrayList<>();
     }
 }

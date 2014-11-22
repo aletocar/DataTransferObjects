@@ -15,7 +15,8 @@ public class DtoTarea {
     private boolean completado;
     private List<DtoUsuario> listaResponsables;
     private List<DtoEtiqueta> listaEtiquetas;
-
+    private DtoProyecto proyecto;
+    
     public Date getFechaCreacion() {
         return fechaCreacion;
     }
@@ -88,9 +89,17 @@ public class DtoTarea {
         this.listaEtiquetas = listaEtiquetas;
     }
 
+    public DtoProyecto getProyecto() {
+        return proyecto;
+    }
+
+    public void setProyecto(DtoProyecto proyecto) {
+        this.proyecto = proyecto;
+    }
+
     public DtoTarea() {
-        subtareas = new ArrayList<DtoTarea>();
-        listaEtiquetas = new ArrayList<DtoEtiqueta>();
-        listaResponsables = new ArrayList<DtoUsuario>();
+        subtareas = new ArrayList<>();
+        listaEtiquetas = new ArrayList<>();
+        listaResponsables = new ArrayList<>();
     }
 }

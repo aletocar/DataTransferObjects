@@ -11,6 +11,7 @@ public class DtoUsuario {
     private String mail;
     private String contraseña;
     private List<DtoUsuario> contactos;
+    private List<DtoUsuario> soyContactoDe;
 
     public Long getId() {
         return id;
@@ -60,7 +61,16 @@ public class DtoUsuario {
         this.contactos = contactos;
     }
 
+    public List<DtoUsuario> getSoyContactoDe() {
+        return soyContactoDe;
+    }
+
+    public void setSoyContactoDe(List<DtoUsuario> soyContactoDe) {
+        this.soyContactoDe = soyContactoDe;
+    }
+
     public DtoUsuario() {
         this.contactos = new ArrayList<DtoUsuario>();
+        this.soyContactoDe = new ArrayList<>();
     }
 }
