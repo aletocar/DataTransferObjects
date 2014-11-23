@@ -13,6 +13,7 @@ public class DtoTarea {
     private String nombre;
     private int prioridad;
     private boolean completado;
+    private DtoUsuario realizador;
     private List<DtoUsuario> listaResponsables;
     private List<DtoEtiqueta> listaEtiquetas;
     private DtoProyecto proyecto;
@@ -95,6 +96,14 @@ public class DtoTarea {
 
     public void setProyecto(DtoProyecto proyecto) {
         this.proyecto = proyecto;
+    }
+
+    public DtoUsuario getRealizador() {
+        return realizador;
+    }
+
+    public void setRealizador(DtoUsuario realizador) {
+        this.realizador = realizador;
     }
 
     public DtoTarea() {
