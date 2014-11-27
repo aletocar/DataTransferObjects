@@ -1,7 +1,7 @@
 
 package com.easytasks.dataTransferObjects;
 
-public class DtoEtiqueta {
+public class DtoEtiqueta extends DataTransferObject{
     private Long id;
     private String nombre;
 

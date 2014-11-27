@@ -1,7 +1,7 @@
 
 package com.easytasks.dataTransferObjects;
 
-public class DtoContexto {
+public class DtoContexto extends DataTransferObject{
     private Long id;
     private String nombre;
     private String descripcion;

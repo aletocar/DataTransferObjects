@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class DtoProyecto {
+public class DtoProyecto extends DataTransferObject{
     private String nombre;
     private DtoUsuario responsable;
     private Long id;

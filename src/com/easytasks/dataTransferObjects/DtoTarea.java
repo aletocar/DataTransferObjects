@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class DtoTarea {
+public class DtoTarea extends DataTransferObject{
 
     private Date fechaCreacion;
     private Date fechaLimite;

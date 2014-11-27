@@ -4,7 +4,7 @@ package com.easytasks.dataTransferObjects;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DtoUsuario {
+public class DtoUsuario extends DataTransferObject{
     private Long id;
     private String nombre;
     private String nombreUsuario;
